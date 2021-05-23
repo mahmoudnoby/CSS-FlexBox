@@ -74,19 +74,19 @@ nav>ul>li a {
 }
 
 .leftmenu {
-    float: left;
-    width: 30%;
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 /*Main Content*/
-
 .main {
-    /* width: 70%; */
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-basis: 70%;
+    align-items: center;
 }
 
 .pageTitle{
