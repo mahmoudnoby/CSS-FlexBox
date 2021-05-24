@@ -71,13 +71,13 @@ nav>ul>li a {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .leftmenu {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 /*Main Content*/
@@ -86,8 +86,33 @@ nav>ul>li a {
     display: flex;
     flex-direction: column;
     flex-basis: 70%;
-    align-items: center;
 }
+
+.pieRow{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+    padding-right: .5rem;
+}
+
+.pieRow h5, .pieRow p{
+    margin: 0;
+}
+
+ .pieRow > div{
+    flex-grow: 2;
+    padding-left: .5rem;
+}
+
+.pieRow > small{
+    flex-shrink: 3;
+}
+
+
 
 .pageTitle{
     font-size:35px;
